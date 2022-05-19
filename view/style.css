@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    /* height: 100vh; */
+    background-image: url(https://www.10wallpaper.com/wallpaper/2560x1600/2112/MacOS_Monterey_2021_Purple_Abstract_5K_Background_2560x1600.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+li {
+    list-style: none;
+}
+
+#navbar {
+    background-color: white;
+    opacity: .7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    padding: 0px 20px 0px 20px;
+    margin: 0;
+}
+
+#navbar ul li input {
+    width: 70px;
+    border: 1px solid black;
+}
+
+#navbar ul li button {
+    border-style: none;
+    background-color: transparent;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar img {
+    vertical-align: text-top;
+    margin-right: 10px;
+}
+
+#today {
+    display: flex;
+    font-weight: bold;
+}
+
+#today p {
+    margin: 0px 0px 0px 5px;
+}
+
+.folderout {
+    margin: 0px 0px 20px 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.folderout:first-child {
+    margin-top: 60px;
+}
+
+.folder {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+
+.foldertop {
+    width: 25px;
+    height: 5px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: lightblue;
+}
+
+.folderbox  {
+    width: 70px;
+    height: 45px;
+    top: 10px;
+    border-radius: 0px 5px 5px 5px;
+    background-color: lightblue;
+}
+
+.foldermain  {
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
+
+.foldername {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: white;
+}
+
+.wrapedit {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editinfo {
+    margin: 0 auto;
+    width: 250px;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.editinfo p {
+    margin-top: 0;
+    height: 40px;
+    line-height: 40px;
+    background-color: lavender;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.editinfo input {
+    margin: 10px 0px 10px 0px;
+    padding-left: 15px;
+    width: 235px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.editinfo button {
+    margin-top: 10px;
+    width: 258px;
+    height: 40px;
+    border-style: none;
+    background-color: lavender;
+    border-radius: 10px;
+}
+
+.editinfo button:nth-child(2) {
+    background-color: purple;
+    color: white;
+}
+
+.signupinfo {
+    margin: 0 auto;
+    width: 410px;
+    height: fit-content;
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.signupinfo p {
+    margin-top: 0;
+    height: 40px;
+    line-height: 40px;
+    background-color: lavender;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.signupinfo input {
+    margin: 10px 0px 10px 0px;
+    padding-left: 15px;
+    width: 185px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.signupinfo input:nth-child(8) {
+    width: 394px;
+}
+
+.signupinfo button {
+    margin-top: 10px;
+    width: 410px;
+    height: 40px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+}
+
+#dock_out {
+    width: 100%;
+}
+
+#dock {
+    background-color: white;
+    opacity: .7;
+    overflow: hidden;
+    padding: 35px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    border-radius: 20px;
+}

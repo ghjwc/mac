@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../view/style.css">
+<body>
+<div id="navbar">
+        <ul>
+            <li>
+                <!-- <img src="https://i.ibb.co/hdtjCjW/731985.png" width="15px"> -->
+                <b>홈페이지명</b></li>
+            
+            <li id="today">
+                <p id="date"></p>
+                <p id="dayNight"></p>
+                <p id="time"></p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- body -->
+    <div id="container">
+
+        <div class="wrapedit">
+            <div class="signupinfo">
+                <form action="../back/sign_up_ok.php" method="post">
+                    <p>회원 가입</p>
+                    <input name="name" type="text" placeholder="성명">
+                    <input name="email" type="text" placeholder="아이디">
+                    <input name="password" type="password" placeholder="비밀번호">
+                    <input type="password" placeholder="비밀번호 확인">
+                    <input name="age" type="text" placeholder="나이">
+                    <input name="sex" type="text" placeholder="성별">
+                    <input name="location" id="addr" type="text" onclick="postcode()" placeholder="주소" readonly>
+
+                    <button type="submit">가입하기</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <div id="dock_out">
+        <div id="dock">
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+<script>
+    
+    
+    function postcode() {
+        new daum.Postcode({
+        oncomplete: function(data) {            
+            document.querySelector("#addr").value = 
+            data["address"];
+            
+        }
+        }).open();
+    }
+
+    </script>
